@@ -25,6 +25,7 @@ public class MyInteger {
 	
 	public boolean IsPrime()
 	{
+		return CheckPrime(value);
 	}
 	
 	public static boolean IsEven(int value)
@@ -39,20 +40,22 @@ public class MyInteger {
 	
 	public static boolean IsPrime(int value)
 	{
+		return CheckPrime(value);
 	}
 	
-	public static boolean IsEven(MyInterger MyInt)
+	public static boolean IsEven(MyInteger MyInt)
 	{
 		return (MyInt.value % 2 == 0);
 	}
 	
-	public static boolean IsOdd(MyInterger MyInt)
+	public static boolean IsOdd(MyInteger MyInt)
 	{
 		return (MyInt.value % 2 != 0);
 	}
 	
-	public static boolean IsPrime(MyInterger Myint)
+	public static boolean IsPrime(MyInteger MyInt)
 	{
+		return CheckPrime(MyInt.value);
 	}
 	
 	
@@ -66,9 +69,9 @@ public class MyInteger {
 		{
 			return false;
 		}
-		for (int i = 5; i < Math.sqrt(value) + 1; i += 6)
+		for (int i = 5; i <= Math.sqrt(value); i += 6)
 		{
-			if (value % i == 0 && value % (i+2) == 0)
+			if (value % i == 0)
 			{
 				return false;
 			}
