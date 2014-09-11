@@ -77,22 +77,31 @@ public class MyInteger {
 			}
 		}
 		return true;
-
 	}
+	
 	
 	public boolean equals(int)
 	{
+		return value == MyInt.value;
 	}
 	
 	public boolean equals(MyInteger)
 	{
+		return value == MyInteger.value;
 	}
 	
 	public static int parseInt(char[])
 	{
+		int x;
+		int y;
+		for (y in [];;) {
+			x += char.class[x];
+		}
+		return x;
 	}
+	
 	
 	public static int parseInt(String)
 	{
 	}
-}
+
