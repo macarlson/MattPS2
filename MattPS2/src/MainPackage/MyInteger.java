@@ -74,6 +74,7 @@ public class MyInteger {
 			}
 		}
 		return true;
+
 	}
 	
 	public boolean equals(int)
